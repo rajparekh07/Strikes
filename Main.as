@@ -31,7 +31,7 @@
 				
 		}
 		public function start(e:Event):void{
-			counterTimer = new Timer(1000,60);
+			counterTimer = new Timer(1000,30);
 			counterTimer.addEventListener(TimerEvent.TIMER,displayTime);
 			timeCounter = new TextField();
 			timeCounter.text = "Time Remaining:0";
@@ -57,7 +57,7 @@
 			logo.visible = false;
 		}
 		public function displayTime(e:TimerEvent){
-				timeCounter.text = "Time Remaining:"+ (60-counterTimer.currentCount).toString();
+				timeCounter.text = "Time Remaining:"+ (30-counterTimer.currentCount).toString();
 		}
 		public function gameOver(e:Event)
 		{
